@@ -21,15 +21,13 @@ print(Time_number_im_ar(1, 2, 1, 1, 2,1))
 
 
 def recursion(num):
-      if (num > 0):
-        result = num + recursion(num - 1)
-        print(result)
-      else:
-        result = 0
-      return result
+    if num == 1:
+        return 1
+    else:
+        return num * recursion(num - 1)
 
 
-recursion(2)
+print(recursion(4))
 
 def Max_number1(*numbers):
     return 'Answer for Q2', max(numbers)
