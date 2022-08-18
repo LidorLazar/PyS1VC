@@ -1,17 +1,17 @@
 def Max_number(*number):
-    maxNum = 0
+    max_num = 0
     for i in number:
-        if i > maxNum:
-            maxNum = i
-    return 'Answer for Q2', maxNum
+        if i > max_num:
+            max_num = i
+    return 'Answer for Q2', max_num
 
 
 print(Max_number(1, 2, 3, 4, 5, 6, 7))
 
 
-def Time_number_im_ar(num1, *allnumber):
+def Time_number_im_ar(num1, *all_number):
     count = 0
-    for i in allnumber:
+    for i in all_number:
         if num1 == i:
             count += 1
     return 'Answer for Q2', count
@@ -31,8 +31,8 @@ def recursion(num):
 
 recursion(2)
 
-def Max_number1(*number):
-    return 'Answer for Q2', max(number)
+def Max_number1(*numbers):
+    return 'Answer for Q2', max(numbers)
 
 
 print(Max_number1(1, 2, 3, 4, 5, 6, 7))
